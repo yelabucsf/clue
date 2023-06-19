@@ -1,0 +1,80 @@
+## COMMENT LINES ## 
+# 
+# clue (Hartoularos et al. 2023) This csv documents which
+#    files are raw or, if they are created through processing, where they were
+#    created.
+#  
+# `path` indicates the **data file** path from GEO 
+# 
+# `created_where` is `raw` if the file is a raw file output directly from 
+# command line tools(cellranger, popscle, etc.) or created through simple 
+# command-line processing from those files (cat, grep, etc.). 
+# 
+# if not `raw`, `created_where` indicates the path to the **processing/analysis 
+# Jupyter notebook** file from this GitHub repository that was used to create 
+# the data file or **describes** how to create it at the command line.
+# 
+## COMMENT LINES ##
+path,created_where
+amo/mrna/cr/well1/outs/raw_feature_bc_matrix.h5,raw
+amo/mrna/cr/well2/outs/raw_feature_bc_matrix.h5,raw
+amo/mrna/cr/well3/outs/raw_feature_bc_matrix.h5,raw
+amo/mrna/cr/well4/outs/raw_feature_bc_matrix.h5,raw
+amo/mrna/cr/well5/outs/raw_feature_bc_matrix.h5,raw
+amo/mrna/demultiplex/freemux/freemux.clust1.samples.gz,raw
+amo/mrna/demultiplex/freemux/wellsplit/freemux.clust1.samples.gz,raw
+amo/mrna/demultiplex/freemux/wellsplit/well1.samples,raw
+amo/mrna/demultiplex/freemux/wellsplit/well2.samples,raw
+amo/mrna/demultiplex/freemux/wellsplit/well3.samples,raw
+amo/mrna/demultiplex/freemux/wellsplit/well4.samples,raw
+amo/mrna/demultiplex/freemux/wellsplit/well5.samples,raw
+amo/mrna/demultiplex/demux/outs/well1_demux.best,raw
+amo/mrna/demultiplex/demux/outs/well2_demux.best,raw
+amo/mrna/demultiplex/demux/outs/well3_demux.best,raw
+amo/mrna/demultiplex/demux/outs/well4_demux.best,raw
+amo/mrna/demultiplex/demux/outs/well5_demux.best,raw
+amo/mrna/demultiplex/aux/mrna_XY_new_offset_umap.npy,amo/geno/geno_dimred.ipynb
+amo/mrna/demultiplex/aux/mrna_pdist_offset.npy,amo/geno/geno_dimred.ipynb
+amo/mrna/demultiplex/matchup/matchup.txt,raw
+amo/mrna/h5ads/concat_1.h5ad,amo/mrna/process1.ipynb
+amo/mrna/h5ads/concat_3.h5ad,amo/mrna/process1.ipynb
+amo/atac/cr/aggr/outs/filtered_peak_bc_matrix.h5,raw
+amo/atac/cr/well1/outs/singlecell.csv,raw
+amo/atac/cr/well2/outs/singlecell.csv,raw
+amo/atac/cr/well3/outs/singlecell.csv,raw
+amo/atac/cr/well4/outs/singlecell.csv,raw
+amo/atac/cr/well5/outs/singlecell.csv,raw
+amo/atac/demultiplex/freemux/by_well/freemux_well1.clust1.samples,raw
+amo/atac/demultiplex/freemux/by_well/freemux_well2.clust1.samples,raw
+amo/atac/demultiplex/freemux/by_well/freemux_well3.clust1.samples,raw
+amo/atac/demultiplex/freemux/by_well/freemux_well4.clust1.samples,raw
+amo/atac/demultiplex/freemux/by_well/freemux_well5.clust1.samples,raw
+amo/atac/demultiplex/freemux/freemux.clust1.samples.gz,raw
+amo/atac/demultiplex/matchup/matchup.txt,raw
+amo/atac/demultiplex/aux/atac_pdist_offset.npy,amo/geno/geno_dimred.ipynb
+amo/atac/demultiplex/aux/atac_XY_new_offset_umap.npy,amo/geno/geno_dimred.ipynb
+amo/atac/h5ads/concat_1.h5ad,amo/atac/process1.ipynb
+amo/atac/h5ads/concat_2.h5ad,amo/atac/process1.ipynb
+amo/atac/h5ads/concat_3.h5ad,amo/atac/process1.ipynb
+amo/atac/h5ads/concat_4.h5ad,amo/atac/process1.ipynb
+amo/atac/h5ads/concat_5.h5ad,amo/atac/process1.ipynb
+amo/atac/vals/bcs/well1_bcs.tsv,amo/atac/extract_bcs.ipynb
+amo/atac/vals/bcs/well2_bcs.tsv,amo/atac/extract_bcs.ipynb
+amo/atac/vals/bcs/well3_bcs.tsv,amo/atac/extract_bcs.ipynb
+amo/atac/vals/bcs/well4_bcs.tsv,amo/atac/extract_bcs.ipynb
+amo/atac/vals/bcs/well5_bcs.tsv,amo/atac/extract_bcs.ipynb
+amo/atac/vals/bcs/all_bcs_GEM.tsv,amo/atac/extract_bcs.ipynb
+amo/atac/archR/clue.aggr.concat_2_bcs.arrow,amo/atac/archR.ipynb
+amo/atac/archR/DA_peaks_run/tmp/tmp-562a575365bd-Date-2022-07-21_Time-12-51-09.arrow,amo/atac/run_DA.ipynb
+amo/atac/archR/DA_peaks_run/ArchRLogs.tar.gz,amo/atac/run_DA.ipynb
+amo/atac/archR/aggr_genescore/barcodes.tsv,amo/atac/archR.ipynb
+amo/atac/archR/aggr_genescore/genes.tsv,amo/atac/archR.ipynb
+amo/atac/archR/aggr_genescore/matrix.mtx,amo/atac/archR.ipynb
+amo/atac/archR/vals/cond.txt,raw
+amo/atac/archR/vals/cell_names.tsv,run_DA.ipynb
+amo/atac/archR/vals/ct2.txt,raw
+amo/atac/archR/vals/lsi.csv,amo/atac/archR.ipynb
+amo/atac/archR/ArchRLogs.tar.gz,amo/atac/archR.ipynb
+amo/atac/archR/QualityControl.tar.gz,amo/atac/archR.ipynb
+amo/atac/archR/DA_peaks.tar,amo/atac/archR.ipynb
+amo/vals/scheme.csv,raw
