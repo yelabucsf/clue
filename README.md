@@ -2,6 +2,7 @@
 
 Clue is a framework for efficient single-cell sequencing using genetic multiplexing. Cells from genetically distinct individuals are mixed in multiple pools such that their presence or absence in a given pool is fully deterministic of which individual they come from. Pooling in this fashion and using a genotype-free demultiplexing algorithm obviates the need for orthogonal genotyping to demultiplex data.
 
+**19JUN23**: Repo is not complete yet. Notebooks and files are being validated on a fresh machine and will be progressively uploaded over the coming weeks/months as they are validated that they run to completion with no errors. Then data will be uploaded to GEO so that all analyses are reproducible.
 
 ## File Organization
 
@@ -68,7 +69,7 @@ Install the `clue_helper` package within this repo:
 (clue_test) ubuntu@ip:/$ pip install .
 ```
 
-**FIGURE OUT WHERE PANDAS WAS UPDATED**  Then, re-install pandas==1.0.5.
+**TODO 19JUN23: Figure out where pandas was updated. Document it here, then re-install pandas==1.0.5.**
 ```
 (clue_test) ubuntu@ip:/$ mamba install pandas==1.0.5
 ```
