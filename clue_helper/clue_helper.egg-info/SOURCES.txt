@@ -1,0 +1,12 @@
+setup.py
+clue_helper/addraw.py
+clue_helper/demux.py
+clue_helper/detools.py
+clue_helper/sctools.py
+clue_helper/utils.py
+clue_helper/vcfhelper.py
+clue_helper.egg-info/PKG-INFO
+clue_helper.egg-info/SOURCES.txt
+clue_helper.egg-info/dependency_links.txt
+clue_helper.egg-info/not-zip-safe
+clue_helper.egg-info/top_level.txt
